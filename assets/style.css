@@ -1,0 +1,459 @@
+/***********************
+-0.Normalize
+
+-1.Main
+
+-2.Styling heading and text
+
+-3.Radio buttons
+
+-4.Normal buttons
+
+-5.Styling list
+
+-6.Responsive
+
+-7.To be used with JS
+***********************/
+/***********************
+-0.Normalize taken from http://necolas.github.io/normalize.css/
+***********************/
+
+html {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+body {
+    margin: 0;
+}
+  
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box; 
+    height: 0; 
+    overflow: visible; 
+}
+
+pre {
+    font-family: monospace, monospace; 
+    font-size: 1em; 
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none; 
+    text-decoration: underline; 
+    text-decoration: underline dotted; 
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; 
+  font-size: 1em; 
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; 
+    font-size: 100%; 
+    line-height: 1.15; 
+    margin: 0;
+}
+
+button,
+input { 
+  overflow: visible;
+}
+
+button,
+select { 
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box; 
+    color: inherit; 
+    display: table; 
+    max-width: 100%; 
+    padding: 0; 
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+  
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; 
+  padding: 0; 
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield; 
+    outline-offset: -2px; 
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; 
+    font: inherit; 
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/***********************
+-1.Main
+***********************/
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:-webkit-linear-gradient(90deg, rgb(192, 197, 74) 0%, rgb(211, 109, 19) 80%);
+    background:-o-linear-gradient(90deg, rgb(192, 197, 74) 0%, rgb(211, 109, 19) 80%);
+    background:-moz-linear-gradient(90deg, rgb(192, 197, 74) 0%, rgb(211, 109, 19) 80%);
+    background:linear-gradient(90deg, rgb(192, 197, 74) 0%, rgb(211, 109, 19) 80%);
+}
+
+.row{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+}
+
+form input{
+    max-width: 20%;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+    border: 0;
+    border-radius: 6px;
+    outline: 0;
+    text-align: center;
+    padding: 2%;
+   
+}
+
+.playerfactions{
+    display: flex;
+    justify-content: space-around;
+    width: 130%;
+}
+
+.playerfactions p{
+    width: 40%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.playerfactions > p{
+    cursor: pointer;
+    border: 1px solid black;
+    text-align: center;
+    padding: 4%;
+    margin-right: 1%;
+}
+
+/***********************
+-2.styling heading and text
+***********************/
+
+.heading{
+    color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p{
+   color: #343434;
+   font-size: 18px;
+   line-height: 20px;
+   font-weight: normal;
+   font-family: 'Orienta', sans-serif;
+   word-break: break-word;
+   
+}
+
+/***********************
+-3.radio-buttons
+***********************/
+
+.radio-btn{
+    display: flex;
+}
+
+.radio-btn input{
+    position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.radio-btn label{
+    background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.radio-btn label:hover{
+    cursor: pointer;
+}
+
+.radio-btn input:checked + label {
+	background-color: #a5dc86;
+	box-shadow: none;
+}
+
+.radio-btn label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.radio-btn label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+/***********************
+-4.Normal-buttons
+***********************/
+
+.factions{
+    border: 2px solid #2d42b9;
+    background: transparent;
+    color: #2d42b9;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;  
+}
+
+.generate {
+    background: #2d42b9;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    margin-top: 2vh;
+}
+
+.round{
+    border: 2px solid #2d42b9;
+    background: transparent;
+    color: #2d42b9;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;  
+}
+
+.play-again{
+    background: #2d42b9;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    margin-top: 2vh;
+}
+
+.ready{
+    background: rgba(30, 204, 24, 0.815);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+}
+
+/***********************
+-5.styling list
+***********************/
+
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    padding: 5%;
+    border-radius: 15%;
+    margin-right: 18%;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+li{ 
+    background: green; 
+}
+.odd{ 
+    background: navy; 
+    color: white;
+}
+
+/***********************
+-6.Responsive
+***********************/
+
+@media only screen and (max-width: 740px) {
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+    form input{
+        width: 50%;
+        margin-top: 2vh;
+    }
+
+    .playerfactions{
+        flex-direction: column;
+        align-items: center;   
+    }
+  }
+
+/***********************
+-7.To be used with JS
+***********************/
+
+  .disable{
+      display: none;
+  }
+
+  .greyout{
+      background-color: slategrey;
+      color: black;
+  }
+
+  .hightlight{
+      background-color: rgba(30, 204, 24, 0.815);
+  }
+
+  .secondchoice{
+      background-color: firebrick;
+  }

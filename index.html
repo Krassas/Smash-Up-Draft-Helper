@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <title>Draft helper</title>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+  </head>
+  <body>
+    <header class="row">
+      <h1 class="heading">Smash Up Draft Helper</h1>
+    </header>
+   <section class ="row">
+      <p>Number of Players</p>
+      
+      <div class="radio-btn">
+        <input type="radio" name="players" id="2-players" value="2-players" checked>
+        <label for="2-players">2</label>
+      
+        <input type="radio" name="players" id="3-players" value="3-players">
+        <label for="3-players">3</label>
+      
+        <input type="radio" name="players" id="4-players" value="4-players">
+        <label for="4-players">4</label>
+      </div>
+   </section>
+   <section class="row">
+     <p>Player Names</p>
+     <form>
+      <input type="text" name="Player 1" value="Player 1" class="player1">
+      <input type="text" name="Player 2" value="Player 2" class="player2">
+      <input type="text" name="Player 3" value="Player 3" class="player3 disable">
+      <input type="text" name="Player 4" value="Player 4" class="player4 disable">
+     </form>
+   </section>
+   <section class="row">
+    <p> Number of Decks/Player</p>
+    <div class="radio-btn">
+      <input type="radio" name="numdecks" id="2-decks" value="2-decks" checked>
+      <label for="2-decks">2</label>
+    
+      <input type="radio" name="numdecks" id="3-decks" value="3-decks">
+      <label for="3-decks">3</label>
+    
+      <input type="radio" name="numdecks" id="4-decks" value="4-decks">
+      <label for="4-decks">4</label>
+    </div>
+   </section>
+
+   <section class="row">
+     <button class="factions">Sets</button>     
+     <button class="generate">Start</button>
+   </section>
+   
+   <!-- Only visible when sets button is pressed -->
+   <section class="row">
+    <ul class="sets disable">
+      <li class="odd">Core Set</li>
+      <li class="select">Awesome Level 9000</li>
+      <li class="odd">The Obligatory Cthulhu Set</li>
+      <li class="select">Science Fiction Double Feature</li>
+      <li class="odd">Monster Smash</li>
+      <li class="select">Pretty Pretty Smash Up</li>
+      <li class="odd">The Big Geeky Box</li>
+      <li class="select">Smash Up: Munchkin</li>
+      <li class="odd">It’s Your Fault!</li>
+      <li class="select">Cease and Desist</li>
+      <li class="odd">What Were We Thinking?</li>
+      <li class="select">All Stars Event Kit</li>
+      <li class="odd">Big in Japan</li>
+      <li class="select">Smash Up Sheep Promo</li>
+      <li class="odd">That ’70s Expansion</li>
+      <li class="select">The Bigger Geekier Box</li>
+      <li class="odd">Oops, You Did It Again</li>
+      <li class="select">World Tour: International Incident</li>
+      <li class="odd">Smash Up Penguins</li>
+      <li class="select">World Tour: Culture Shock</li>
+    </ul>
+   </section>
+   
+   <!-- Only visible when start is pressed -->
+   <section class="row disable">
+     <h3 class="p1">Player1:</h3>
+     <div class="playerfactions pf1 required">
+       <p class="p1random1 required">faction</p>
+       <p class="p1random2 required">faction</p>
+       <p class="p1random3 disable">faction</p>
+       <p class="p1random4 disable">faction</p>
+     </div>
+     <h3 class="p2">Player2:</h3>
+     <div class="playerfactions pf2 required">
+       <p class="p2random1 required">faction</p>
+       <p class="p2random2 required">faction</p>
+       <p class="p2random3 disable">faction</p>
+       <p class="p2random4 disable">faction</p>
+     </div>
+     <h3 class="p3">Player3:</h3>
+     <div class="playerfactions pf3 required">
+       <p class="p3random1 required">faction</p>
+       <p class="p3random2 required">faction</p>
+       <p class="p3random3 disable">faction</p>
+       <p class="p3random4 disable">faction</p>
+     </div>
+     <h3 class="p4">Player4:</h3>
+     <div class="playerfactions pf4 required">
+       <p class="p4random1 required">faction</p>
+       <p class="p4random2 required">faction</p>
+       <p class="p4random3 disable">faction</p>
+       <p class="p4random4 disable">faction</p>
+     </div>
+     <div class="buttons">
+      <button class="ready">Ready</button>      
+      <button class="play-again">New Game</button>
+     </div>
+   </section>
+   <script src="assets/script.js"></script>
+  </body>
+</html>
