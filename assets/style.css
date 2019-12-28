@@ -228,7 +228,7 @@ form{
 }
 
 form input{
-    max-width: 20%;
+    max-width: 40%;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
     border: 0;
     border-radius: 6px;
@@ -285,6 +285,7 @@ p{
    font-weight: normal;
    font-family: 'Orienta', sans-serif;
    word-break: break-word;
+   text-align: center;
    
 }
 
